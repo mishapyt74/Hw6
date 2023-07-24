@@ -1,4 +1,6 @@
 from pathlib import Path
+
+
 import shutil
 import sys
 import file_parser as parser
@@ -18,7 +20,6 @@ def handle_archive(filename: Path, target_folder: Path) -> None:
     except shutil.ReadError as e:
         print(f"Error: {e}")
 def handle_folder(folder: Path) -> None:
-    # Placeholder implementation
     pass
 def main(folder: Path):
     parser.scan(folder)
